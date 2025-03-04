@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+label.button {
+    border: none;
+    border-radius: 3px;
+    margin-top: -10vh;
+    margin-right: 2vh;
+    padding: 1vh 1vh;
+    background-color: rgb(224, 81, 29);
+    font-size: 3vh;
+    color: white;
+    float: right;
+    cursor: pointer;
+}
+
+input {
+    margin-top: 5vh;
+}
+
+label i {
+    font-size: 3vh;
+    width: 4vh;
+    padding-left: 0.7vh;
+
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    background-image: linear-gradient(-190deg, indigo, black);
+    visibility: hidden;
+}
+
+.overlay label.close-btn {
+    font-size: 3vh;
+    position: absolute;
+    top: 2vh;
+    right: 3vh;
+    color: white;
+    cursor: pointer;
+}
+
+.overlay label.close-btn:hover {
+    border: none;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: orangered;
+}
+
+#nav {
+    display: none;
+}
+
+#nav:checked+.overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay .box {
+    border: none;
+    width: 50%;
+    height: 400px;
+    position: absolute;
+    top: 8vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.overlay .box div.nav-item {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+}
+
+.overlay .box .nav-item a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    font-size: 2.5vh;
+    margin-left: 2vh;
+}
+
+.overlay .box .nav-item span {
+    font-size: small;
+    color: rgb(68, 64, 64);
+    margin-left: 2vh;
+}
+
+.overlay .box div.nav-item:hover {
+    color: white;
+    background-color: orangered;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.overlay .box .dropdown a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    font-size: 2.5vh;
+    margin-left: 2vh;
+}
+
+.overlay .box .dropdown span {
+    font-size: small;
+    color: rgb(68, 64, 64);
+    margin-left: 2vh;
+}
+
+.overlay .box .dropdown {
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+}
+
+.overlay .box .dropdown:hover {
+    color: white;
+    background-color: orangered;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.overlay .box .dropdown i#caret {
+    float: right;
+    color: white;
+    margin-right: 2vh;
+    font-size: 3.4vh;
+    cursor: pointer;
+    position: relative;
+    top: -1vh;
+}
+
+.btn {
+    background-color: orangered;
+    padding: 3vh;
+    font-size: 3vh;
+    color: white;
+    cursor: pointer;
+    margin-left: 2vh;
+    margin-top: 3vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.subnav-content {
+    width: 18.55%;
+    height: 150px;
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    background-color: darkgray;
+    margin-left: 2vh;
+    margin-top: 12vh;
+    visibility: hidden;
+    box-shadow: 1vh 2vh 1vh rgb(140, 129, 129);
+
+}
+
+.subnav-content ul {
+    list-style-type: none;
+}
+
+.subnav-content ul li {
+    padding: 1.5vh;
+    cursor: pointer;
+}
+
+.subnav-content ul a {
+    text-decoration: none;
+    font-size: 2vh;
+    color: white;
+}
+
+.subnav-content ul li:hover {
+    background-color: green;
+    width: 100%;
+    height: 5vh;
+}
+
+.subnav-content ul li:hover a {
+    color: black;
+}
+
+#subnav {
+    display: none;
+}
+
+#subnav:checked+.subnav-content {
+    visibility: visible;
+}

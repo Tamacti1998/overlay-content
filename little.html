@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Designer Overlay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css">
+</head>
+
+<body>
+    <!-----------------Fullbody Nav Overlay-------->
+    <label for="nav" class="button"><i class="fa fa-bars"></i></label>
+    <input type="checkbox" id="nav">
+    <div class="overlay">
+        <label for="nav" class="close-btn">&times</label>
+        <div class="box">
+            <div class="nav-item">
+                <a href="#"><i class="fa fa-home"></i> Home</a>
+                <span>About & Examples</span>
+            </div>
+            <div class="dropdown">
+                <a href="#"><i class="fa fa-book"></i> Tutorials</a><br>
+                <span>Setup & Options</span>
+                <i id="caret" class="fa fa-caret-up"></i>
+            </div>
+            <div class="nav-item">
+                <a href="#"><i class="fa fa-shopping-cart"></i> Purchase</a>
+                <span>Overlay Menu Stack - $19.99</span>
+            </div>
+            <div class="nav-item">
+                <a href="#"><i class="fa fa-shopping-basket"></i> 1LD</a>
+                <span>See More Stacks</span>
+            </div>
+        </div>
+    </div>
+    <!-----Subnav-------->
+    <label for="subnav" class="btn">Sub-Navigation <i class="fa fa-caret-down"></i></label>
+    <input type="checkbox" id="subnav">
+    <div class="subnav-content">
+        <ul>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Stacks</a></li>
+            <li><a href="#">Profile</a></li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>
